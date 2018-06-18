@@ -1,4 +1,1 @@
-Hackerrank awesomeness
-
-#Find me
-https://www.hackerrank.com/entergmode
+Interesting algo problems that I have been solving
