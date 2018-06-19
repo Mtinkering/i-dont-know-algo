@@ -19,11 +19,13 @@ int bfs(int floors, int start, int goal, int up, int down)
   path[start] = 0;
   q.push(start);
 
+  // Run BFS
   while (q.size())
   {
     int u = q.front();
     q.pop();
 
+    // There are 2 options to either go up or down. Served as edges
     vector<int> options;
     options.push_back(u + up);
     options.push_back(u - down);
@@ -32,10 +34,14 @@ int bfs(int floors, int start, int goal, int up, int down)
     for (int i = 0; i < size; i++)
     {
       int v = options[i];
+
+      // Return once we found it
       if (options[i] == goal)
       {
         return path[u] + 1;
       }
+
+      // Else just keep track of the current times it takes
       if (v >= 0 && v < floors && path[v] == -1)
       {
         q.push(v);
@@ -55,6 +61,7 @@ int main()
   int down = 0;
   cin >> floors >> start >> goal >> up >> down;
 
+  // Minus one to go to base 0
   int result = bfs(floors, start - 1, goal - 1, up, down);
 
   if (result == -1)
