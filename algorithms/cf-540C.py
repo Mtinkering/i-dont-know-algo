@@ -1,6 +1,7 @@
 '''
 ' Steven June 19 2018
 ' http://codeforces.com/contest/540/problem/C
+' BFS
 '''
 n, m = map(int, input().split())
 

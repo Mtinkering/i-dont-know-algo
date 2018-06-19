@@ -1,6 +1,7 @@
 '''
 ' Steven June 19 2018
 ' https://www.spoj.com/problems/KOZE/
+' BFS
 '''
 
 from queue import Queue

@@ -1,6 +1,7 @@
 /*
 * Steven June 19 2018
 * https://www.spoj.com/problems/ELEVTRBL/
+* BFS
 */
 #include <iostream>
 #include <vector>
