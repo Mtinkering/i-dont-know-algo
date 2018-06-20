@@ -1,9 +1,8 @@
 '''
-' Steven June 19 2018
+' Steven June 20 2018
 ' https://www.spoj.com/problems/CAM5/
 ' BFS, DFS
 '''
-
 
 def readInput():
   line = input()
@@ -11,9 +10,8 @@ def readInput():
     line = input()
   return line
 
-
 def dfs(graph, s, visited):
-  # Queue
+  # Stack
   st = [s]
 
   visited[s] = True
@@ -25,6 +23,14 @@ def dfs(graph, s, visited):
         visited[v] = True
         st.append(v)
 
+
+# DFS recursion
+def dfsr(graph, s, visited):
+  visited[s] = True
+
+  for v in graph[s]:
+    if not visited[v]:
+      dfsr(graph, v, visited)
 
 def bfs(graph, s, visited):
   # Queue
@@ -41,7 +47,6 @@ def bfs(graph, s, visited):
           nextLevel.append(v)
 
     q = nextLevel
-
 
 def solve():
   # Number of peers
@@ -62,10 +67,9 @@ def solve():
   counter = 0
   for i in range(n):
     if not visited[i]:
-      dfs(graph, i, visited)
+      dfsr(graph, i, visited)
       counter += 1
   print(counter)
-
 
 # test cases
 t = int(readInput())

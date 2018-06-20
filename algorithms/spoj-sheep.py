@@ -3,7 +3,6 @@
 ' https://www.spoj.com/problems/KOZE/
 ' BFS
 '''
-
 from queue import Queue
 
 def bfs(arr, x, y, visited):
@@ -55,7 +54,7 @@ for i in range(n):
 
   arr.append(s.strip())
 
-
+# Main logic
 totalSheep = 0
 totalWolves = 0
 visited = [[False]*m for i in range(n)]

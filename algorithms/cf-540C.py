@@ -37,7 +37,6 @@ def bfs(maze, x, y, r2, c2):
     q = nextLevel
   return False
 
-
 answer = bfs(arr, r1, c1, r2, c2)
 
 print('YES' if answer == True else 'NO')
