@@ -1,7 +1,7 @@
 '''
-' Steven June 19 2018
-' http://codeforces.com/contest/540/problem/C
-' BFS
+' Steven June 23 2018
+' http://codeforces.com/contest/723/problem/D
+' BFS, DFS
 '''
 n, m, k = map(int, input().split())
 
