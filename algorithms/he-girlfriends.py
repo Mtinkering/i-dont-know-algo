@@ -43,8 +43,13 @@ for i in range(q):
   # We want to keep track of the distance and the id
   arr.append((visited[g-1], g))
 
-# Now sort in ascending order of the distance and id
-arr.sort()
+minDistance = n + 1
+minId = n + 1
+
+for distance in arr:
+  if distance[0] <= minDistance:
+    minDistance = distance[0]
+    minId = min(minId, distance[1])
 
 # First one, with the id is the answer
-print(arr[0][1])
+print(minId)

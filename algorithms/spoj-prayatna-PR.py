@@ -3,6 +3,8 @@
 ' https://www.spoj.com/problems/CAM5/
 ' BFS, DFS
 '''
+import sys
+sys.setrecursionlimit(1000000)
 
 def readInput():
   line = input()
