@@ -13,6 +13,7 @@ for i in range(n):
 r1, c1 = map(lambda x: int(x) - 1, input().split())
 r2, c2 = map(lambda x: int(x) - 1, input().split())
 
+
 def bfs(maze, x, y, r2, c2):
   q = [(x, y)]
 
@@ -23,19 +24,20 @@ def bfs(maze, x, y, r2, c2):
 
     for x, y in q:
       for dx, dy in directions:
-        new_x, new_y = x + dx, y + dy
+        newX, newY = x + dx, y + dy
 
         # Crack the ice that went through
-        if 0 <= new_x < len(maze) and 0 <= new_y < len(maze[0]) and maze[new_x][new_y] == '.':
-          maze[new_x][new_y] = 'X'
-          nextLevel.append((new_x, new_y))
-        
+        if 0 <= newX < len(maze) and 0 <= newY < len(maze[0]) and maze[newX][newY] == '.':
+          maze[newX][newY] = 'X'
+          nextLevel.append((newX, newY))
+
         # If there is a way to go to it and it's cracking, it's the answer
-        elif new_x == r2 and new_y == c2 and maze[new_x][new_y] == 'X':
-            return True
+        elif newX == r2 and newY == c2 and maze[newX][newY] == 'X':
+          return True
 
     q = nextLevel
   return False
+
 
 answer = bfs(arr, r1, c1, r2, c2)
 

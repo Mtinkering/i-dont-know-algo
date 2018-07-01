@@ -69,5 +69,5 @@ print(minNumberOfCells)
 
 for i in range(n):
   for j in range(m):
-    print('*' if visited[i][j] == -1 or toBeFilled[visited[i][j]] else '.', end='')
+    print('*' if visited[i][j] == -1 or toBeFilled[visited[i][j]] == True else '.', end='')
   print()

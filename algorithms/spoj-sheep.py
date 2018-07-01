@@ -5,6 +5,7 @@
 '''
 from queue import Queue
 
+
 def bfs(arr, x, y, visited):
   sheep = 0
   wolves = 0

@@ -4,6 +4,7 @@
 ' BFS, DFS
 '''
 
+
 def dfs(graph, src):
   # Use the stack
   visited = [-1]*len(graph)
@@ -22,6 +23,7 @@ def dfs(graph, src):
         visited[v] = visited[u] + 1
 
   return visited
+
 
 n = int(input())
 

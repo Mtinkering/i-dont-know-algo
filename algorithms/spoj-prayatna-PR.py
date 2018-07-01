@@ -6,11 +6,13 @@
 import sys
 sys.setrecursionlimit(1000000)
 
+
 def readInput():
   line = input()
   while not line.strip():
     line = input()
   return line
+
 
 def dfs(graph, s, visited):
   # Stack
@@ -34,6 +36,7 @@ def dfsr(graph, s, visited):
     if not visited[v]:
       dfsr(graph, v, visited)
 
+
 def bfs(graph, s, visited):
   # Queue
   q = [s]
@@ -49,6 +52,7 @@ def bfs(graph, s, visited):
           nextLevel.append(v)
 
     q = nextLevel
+
 
 def solve():
   # Number of peers
@@ -72,6 +76,7 @@ def solve():
       dfsr(graph, i, visited)
       counter += 1
   print(counter)
+
 
 # test cases
 t = int(readInput())

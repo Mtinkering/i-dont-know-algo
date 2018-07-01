@@ -15,3 +15,5 @@ leetcode/
 bigOCoding/lecture-notes
 algo
 bigOCoding
+
+*.o
