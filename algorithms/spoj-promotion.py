@@ -3,7 +3,7 @@
 ' https://www.spoj.com/problems/PRO/
 ' Priority Queue
 ' Idea: The idea is to keep track what has been deleted
-' Complexities: ?
+' Complexities: KlogK where K is the total number of numbers. Because each number is pushed in once and taken out once
 '''
 import heapq
 import sys
