@@ -6,6 +6,9 @@
  * Tags: dijkstra
  * Algo: min distance is the max total time of min from s to i, plus min from i to d, for all i in between s and d.
  * Complexity: ElogV, with V is number of vertices, E is the number of edges
+ * Because with adjacency list, updating burn times take O(logV) each, total O(E) edges.
+ * Remember we only go through edges once.
+ * O((E+V)logV)
  */
 
 import java.util.ArrayList;
