@@ -30,18 +30,18 @@ def findWord(root, word):
   return tmp.weight
 
 
-n, q = map(int, input().split())
+def main():
+  n, q = map(int, input().split())
+  trie = Node()
 
-trie = Node()
+  for i in range(n):
+    word, weight = input().split()
+    addNode(trie, word, int(weight))
 
-for i in range(n):
-  word, weight = input().split()
+  for i in range(q):
+    word = input()
+    res = findWord(trie, word)
+    print(res)
 
-  addNode(trie, word, int(weight))
 
-for i in range(q):
-  word = input()
-
-  res = findWord(trie, word)
-
-  print(res)
+main()
