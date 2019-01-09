@@ -102,3 +102,11 @@ if __name__ == '__main__':
   print(remove(root, "then"))
 
   print(len(root.child))
+
+
+# python trick:
+from collections import defaultdict
+
+
+def _trie():
+  return defaultdict(_trie)
