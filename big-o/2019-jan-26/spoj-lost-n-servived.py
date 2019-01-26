@@ -1,7 +1,8 @@
 # https: // www.spoj.com/problems/LOSTNSURVIVED/
 # Need a way to track min values. PriorityQueue is a good candidate
 # Use heapq for performance
-# Complexity is O(N + Q), because the findMinSize complexity is low if we do it often enough
+# Time Complexity is O(N + Q), because the findMinSize complexity is low if we do it often enough
+# Space complexity is O(N)
 import heapq
 
 
