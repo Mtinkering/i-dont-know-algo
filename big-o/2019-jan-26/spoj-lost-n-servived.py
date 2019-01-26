@@ -1,3 +1,7 @@
+# https: // www.spoj.com/problems/LOSTNSURVIVED/
+# Need a way to track min values. PriorityQueue is a good candidate
+# Use heapq for performance
+# Complexity is O(N + Q), because the findMinSize complexity is low if we do it often enough
 import heapq
 
 
@@ -8,7 +12,7 @@ class UnionFind:
     # self.minSize = queue.PriorityQueue()
     self.minSize = [(1, i) for i in range(n)]
     heapq.heapify(self.minSize)
-    # print(self.minSize)
+
     # for i in range(n):
     #   self.minSize.put((1, i)) # Store the size and the represent
 
