@@ -30,7 +30,7 @@ def main():
   n, m = map(int, input().split())
   graph = [[] for i in range(n)]
 
-  for i in range(m):
+  for _ in range(m):
     a, b, w = map(lambda x: int(x) - 1, input().split())
 
     w += 1

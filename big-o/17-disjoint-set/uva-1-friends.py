@@ -1,3 +1,4 @@
+# https: // uva.onlinejudge.org/index.php?option = com_onlinejudge & Itemid = 8 & page = show_problem & problem = 1549
 class UnionFind:
   def __init__(self, n):
     self.parent = [i for i in range(n)]
