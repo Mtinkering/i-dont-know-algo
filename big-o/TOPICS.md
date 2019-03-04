@@ -7,14 +7,14 @@
 ## 2. Data Structures
 - Array
 - LinkedList
-- Disjoint Sets
-- Heap (Min/Max)
 - String
-- HashTable
 - Stack, Queue
-- Trie
-- Graph (Adjacency lists, matrix 2D, directed, undirected, weighted)
+- HashTable
+- Heap (Min/Max)
 - Binary Tree, Binary Search Tree, Red-Black Tree ??
+- Trie
+- Disjoint Sets
+- Graph (Adjacency lists, matrix 2D, directed, undirected, weighted)
 
 ## 3. Algorithms
 - DFS
