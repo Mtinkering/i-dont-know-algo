@@ -29,3 +29,16 @@ print(removeKdigits(1, "123345", 5))
 print(removeKdigits(1, "123345", 6))
 print(removeKdigits(1, "7654331", 6))
 print(removeKdigits(1, "1230", 3))
+
+0
+0
+0
+0
+0
+0
+1
+2
+0
+
+
+
