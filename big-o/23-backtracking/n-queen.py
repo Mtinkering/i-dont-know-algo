@@ -1,5 +1,5 @@
 # Start top left
-# if all queens are places (col >= N): return True
+# if all queens are placed (col >= N): return True
 # Try all rows in the current colum:
 # If it can be placed, mark it. Then from here check if it leads to a solution
 # Yes, then return
