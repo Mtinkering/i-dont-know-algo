@@ -26,7 +26,7 @@
   - Quick Sort
   - Radix/Bucket Sort
 
-# To read for Amazon:
+# To read:
 ### *Object Oriented Design*
 You should have a working knowledge of a few common and useful design patterns (singleton, factory, adapter, bridge, visitor, command, proxy, observer, etc.) as well as know how to write software in an object oriented way with appropriate use of inheritance and aggregation.
 
